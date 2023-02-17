@@ -12,6 +12,7 @@ import SettingsIcon from "../../assets/svgs/SettingsIcon.svg";
 import SignOutIcon from "../../assets/svgs/SignOutIcon.svg";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Searchbar from "../Searchbar";
 
 const SideBar = () => {
   const router = useRouter();
@@ -76,10 +77,11 @@ const SideBar = () => {
           </Link>
         </li>
         <li className={styles.search__bar}>
-          <div className={styles.search__bar__conatiner}>
+          {/* <div className={styles.search__bar__conatiner}>
             <SearchIcon />
             <input placeholder="Search" />
-          </div>
+          </div> */}
+          <Searchbar />
         </li>
         {/* <li className={styles.nav__item}>
           <Link href="/settings" className={styles.nav__link}>

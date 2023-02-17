@@ -295,6 +295,7 @@ body {
 
 main {
   margin-left: 5rem;
+  padding: 25px 32px 0 32px;
 }
 
 .main__container {
@@ -308,4 +309,8 @@ main {
 .fc {
   display: flex;
   flex-direction: column;
+}
+
+thead {
+  background-color: var(--gray--50);
 }
