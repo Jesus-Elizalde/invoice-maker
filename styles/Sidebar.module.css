@@ -43,14 +43,13 @@
   display: flex;
   align-items: center;
   gap: 15px;
-
-  font-size: var(--text-md---font-size);
-  font-weight: (--semibold-font-weight);
 }
-.tab__conatiners h2 {
+
+.tab__title {
   font-size: var(--text-md---font-size);
   font-weight: (--semibold-font-weight);
   line-height: (--text-md---line-height);
+  color: var(--gray--700);
 }
 
 .profile__conatiner {
@@ -59,6 +58,20 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.tab__conatiners__selected {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--gray--50);
+}
+
+.tab__title {
+  font-size: var(--text-md---font-size);
+  font-weight: (--semibold-font-weight);
+  line-height: (--text-md---line-height);
+  color: var(--gray--900);
 }
 
 .profile__picture {

@@ -17,27 +17,27 @@ const SideBar = () => {
           <h1 className={styles.logo__name}>Company Name</h1>
         </div>
         <div className={styles.search__bar}></div>
-        <div className={styles.tab__conatiners}>
+        <div className={styles.tab__conatiners__selected}>
           <HomeIcon />
-          <h2>Home</h2>
+          <p className={styles.tab__title__selected}>Home</p>
         </div>
         <div className={styles.tab__conatiners}>
           <CustomersIcon />
-          <h2>Customers</h2>
+          <p className={styles.tab__title}>Customers</p>
         </div>
         <div className={styles.tab__conatiners}>
           <EstimatesIcon />
-          <h2>Estimates</h2>
+          <p className={styles.tab__title}>Estimates</p>
         </div>
         <div className={styles.tab__conatiners}>
           <InvoicesIcon />
-          <h2>Invoices</h2>
+          <p className={styles.tab__title}>Invoices</p>
         </div>
       </div>
       <div className={styles.top__container}>
         <div className={styles.tab__conatiners}>
           <SettingsIcon />
-          <h2>Settings</h2>
+          <p className={styles.tab__title}>Settings</p>
         </div>
         <div className={styles.profile__conatiner}>
           <div className={styles.profile__picture}></div>

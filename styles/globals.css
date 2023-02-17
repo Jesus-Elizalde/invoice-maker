@@ -284,6 +284,10 @@
   --background-blur----xl: ;
 }
 
+*{
+  font-family:var(--font-family);
+}
+
 body {
   margin: 0;
 }
