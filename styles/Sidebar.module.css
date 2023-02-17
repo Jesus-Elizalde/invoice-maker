@@ -5,6 +5,7 @@
   height: 100vh;
   padding: 24px;
   border-right: 1px solid var(--gray--200);
+  justify-content: space-between;
 }
 
 .logo__conatiner {
