@@ -27,25 +27,49 @@ const SideBar = () => {
           </Link>
         </li>
 
-        <li className={styles.nav__item}>
+        <li
+          className={
+            pathname === "/home"
+              ? `${styles.nav__item} ${styles.selected}`
+              : styles.nav__item
+          }
+        >
           <Link href="/home" className={styles.nav__link}>
             <HomeIcon />
             <span className={styles.link__text}>Home</span>
           </Link>
         </li>
-        <li className={styles.nav__item}>
+        <li
+          className={
+            pathname === "/customers"
+              ? `${styles.nav__item} ${styles.selected}`
+              : styles.nav__item
+          }
+        >
           <Link href="/customers" className={styles.nav__link}>
             <CustomersIcon />
             <span className={styles.link__text}>Customers</span>
           </Link>
         </li>
-        <li className={styles.nav__item}>
+        <li
+          className={
+            pathname === "/estimates"
+              ? `${styles.nav__item} ${styles.selected}`
+              : styles.nav__item
+          }
+        >
           <Link href="/estimates" className={styles.nav__link}>
             <EstimatesIcon />
             <span className={styles.link__text}>Estimates</span>
           </Link>
         </li>
-        <li className={styles.nav__item}>
+        <li
+          className={
+            pathname === "/invoices"
+              ? `${styles.nav__item} ${styles.selected}`
+              : styles.nav__item
+          }
+        >
           <Link href="/invoices" className={styles.nav__link}>
             <InvoicesIcon />
             <span className={styles.link__text}>Invoices</span>
@@ -63,19 +87,24 @@ const SideBar = () => {
             <span className={styles.link__text}>Settings</span>
           </Link>
         </li> */}
-        <li className={styles.nav__item}>
+        <li
+          className={
+            pathname === "/settings"
+              ? `${styles.nav__item} ${styles.selected}`
+              : styles.nav__item
+          }
+        >
           <Link href="/settings" className={styles.nav__link}>
             <SettingsIcon />
             <span className={styles.link__text}>Settings</span>
           </Link>
           <div
-            href="/settings"
-            className={`${styles.nav__link} ${styles.nav__profile__box}`}
+            className={`${styles.nav__profile__box} ${styles.nav__profile__box}`}
           >
             <ProfileIcon />
             <div className={styles.link__text}>
-              <span>Test User</span>
-              <span>demouser@test.com</span>
+              {/* <span>Test User</span>
+              <span>demouser@test.com</span> */}
             </div>
             {/* <SignOutIcon /> */}
           </div>
