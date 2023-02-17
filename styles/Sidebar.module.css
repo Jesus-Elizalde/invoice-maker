@@ -1,4 +1,21 @@
 .Sidebar__container {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   height: 100%;
+  padding: 24px;
+}
+
+.company__logo {
+  width: 32px;
+  height: 32px;
+  background-color: var(--gray--300);
+}
+
+.search__bar {
+  width: 231px;
+  height: 44px;
+  background: var(--base--white);
+  border: 1px solid var(--gray--300);
+  border-radius: 8px;
 }
