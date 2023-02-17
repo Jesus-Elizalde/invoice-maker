@@ -2,6 +2,8 @@ import React from "react";
 import styles from "../../styles/Sidebar.module.css";
 
 import LogoIcon from "../../assets/svgs/LogoIcon.svg";
+import SearchIcon from "../../assets/svgs/SearchIcon.svg";
+import ProfileIcon from "../../assets/svgs/ProfileIcon.svg";
 import HomeIcon from "../../assets/svgs/HomeIcon.svg";
 import CustomersIcon from "../../assets/svgs/CustomersIcon.svg";
 import EstimatesIcon from "../../assets/svgs/EstimatesIcon.svg";
@@ -24,6 +26,7 @@ const SideBar = () => {
             <span className={styles.link__text}>Company Name</span>
           </Link>
         </li>
+
         <li className={styles.nav__item}>
           <Link href="/home" className={styles.nav__link}>
             <HomeIcon />
@@ -48,11 +51,34 @@ const SideBar = () => {
             <span className={styles.link__text}>Invoices</span>
           </Link>
         </li>
+        <li className={styles.search__bar}>
+          <div className={styles.search__bar__conatiner}>
+            <SearchIcon />
+            <input placeholder="Search" />
+          </div>
+        </li>
+        {/* <li className={styles.nav__item}>
+          <Link href="/settings" className={styles.nav__link}>
+            <SettingsIcon />
+            <span className={styles.link__text}>Settings</span>
+          </Link>
+        </li> */}
         <li className={styles.nav__item}>
           <Link href="/settings" className={styles.nav__link}>
             <SettingsIcon />
             <span className={styles.link__text}>Settings</span>
           </Link>
+          <div
+            href="/settings"
+            className={`${styles.nav__link} ${styles.nav__profile__box}`}
+          >
+            <ProfileIcon />
+            <div className={styles.link__text}>
+              <span>Test User</span>
+              <span>demouser@test.com</span>
+            </div>
+            {/* <SignOutIcon /> */}
+          </div>
         </li>
       </ul>
     </nav>
