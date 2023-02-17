@@ -1,18 +1,35 @@
 import React from "react";
 import styles from "../../styles/Sidebar.module.css";
 
+import HomeIcon from "../../assets/svgs/HomeIcon.svg";
+import CustomersIcon from "../../assets/svgs/CustomersIcon.svg";
+import EstimatesIcon from "../../assets/svgs/EstimatesIcon.svg";
+import InvoicesIcon from "../../assets/svgs/InvoicesIcon.svg";
+
 const SideBar = () => {
   return (
     <nav className={styles.Sidebar__container}>
-      <div className="fr">
+      <div className={styles.logo__conatiner}>
         <div className={styles.company__logo}></div>
-        <h1>Company Name</h1>
+        <h1 className={styles.logo__name}>Company Name</h1>
       </div>
       <div className={styles.search__bar}></div>
-      <div className="fr"></div>
-      <div className="fr"></div>
-      <div className="fr"></div>
-      <div className="fr"></div>
+      <div className={styles.tab__conatiners}>
+        <HomeIcon />
+        <h2>Home</h2>
+      </div>
+      <div className={styles.tab__conatiners}>
+        <CustomersIcon />
+        <h2>Customers</h2>
+      </div>
+      <div className={styles.tab__conatiners}>
+        <EstimatesIcon />
+        <h2>Estimates</h2>
+      </div>
+      <div className={styles.tab__conatiners}>
+        <InvoicesIcon />
+        <h2>Invoices</h2>
+      </div>
     </nav>
   );
 };
