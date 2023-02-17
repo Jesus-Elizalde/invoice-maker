@@ -1,4 +1,50 @@
 .Sidebar__container {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   height: 100%;
+  padding: 24px;
+  border-right: 1px solid var(--gray--200);
+}
+
+.logo__conatiner {
+  display: flex;
+  align-items: center;
+}
+
+.company__logo {
+  width: 32px;
+  height: 32px;
+  background-color: var(--gray--300);
+  margin-right: 10px;
+}
+
+.logo__name {
+  color: var(--primary--600);
+  font-size: var(--text-md---font-size);
+  font-weight: var(--semibold-font-weight);
+  line-height: 19px;
+}
+
+.search__bar {
+  width: 231px;
+  height: 44px;
+  background: var(--base--white);
+  border: 1px solid var(--gray--300);
+  border-radius: 8px;
+  margin: 15px 0px;
+}
+
+.tab__conatiners {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: var(--text-md---font-size);
+  font-weight: (--semibold-font-weight);
+}
+.tab__conatiners h2 {
+  font-size: var(--text-md---font-size);
+  font-weight: (--semibold-font-weight);
+  line-height: (--text-md---line-height);
 }
