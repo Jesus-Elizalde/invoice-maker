@@ -181,71 +181,65 @@
   --avatar-user-square---kari--rasmussen-color-background: #a9b58d;
   --avatar-user-square---nala--goins-color-background: #c0c6dd;
 
+  /* Font */
+  --font-family:"Inter"
+  --font-style:"normal"
+
   /* Text-size styles */
-  --display-2xl---regular: 72px;
-  --display-2xl---medium: 72px;
-  --display-2xl---semibold: 72px;
-  --display-2xl---bold: 72px;
-  --display-xl---regular: 60px;
-  --display-xl---medium: 60px;
-  --display-xl---semibold: 60px;
-  --display-xl---bold: 60px;
-  --display-lg---regular: 48px;
-  --display-lg---medium: 48px;
-  --display-lg---semibold: 48px;
-  --display-lg---bold: 48px;
-  --display-md---regular: 36px;
-  --display-md---medium: 36px;
-  --display-md---semibold: 36px;
-  --display-md---bold: 36px;
-  --display-sm---regular: 30px;
-  --display-sm---medium: 30px;
-  --display-sm---semibold: 30px;
-  --display-sm---bold: 30px;
-  --display-sm-----medium-italic: 30px;
-  --display-xs---regular: 24px;
-  --display-xs---medium: 24px;
-  --display-xs---semibold: 24px;
-  --display-xs---bold: 24px;
-  --display-xs---medium-italic: 24px;
-  --display-xs-----semibold-underlined: 24px;
-  --text-xl---regular: 20px;
-  --text-xl---medium: 20px;
-  --text-xl---semibold: 20px;
-  --text-xl---bold: 20px;
-  --text-xl---regular-italic: 20px;
-  --text-xl---medium-italic: 20px;
-  --text-xl---semibold-italic: 20px;
-  --text-xl---bold-italic: 20px;
-  --text-xl-----regular-underlined: 20px;
-  --text-xl-----medium-underlined: 20px;
-  --text-lg---regular: 18px;
-  --text-lg---medium: 18px;
-  --text-lg---semibold: 18px;
-  --text-lg---bold: 18px;
-  --text-lg---regular-italic: 18px;
-  --text-lg---medium-italic: 18px;
-  --text-lg---semibold-italic: 18px;
-  --text-lg---bold-italic: 18px;
-  --text-lg---regular-underlined: 18px;
-  --text-lg-----medium-underlined: 18px;
-  --text-md---regular: 16px;
-  --text-md---medium: 16px;
-  --text-md---semibold: 16px;
-  --text-md---bold: 16px;
-  --text-md---regular-italic: 16px;
-  --text-md---medium-italic: 16px;
-  --text-md---semibold-italic: 16px;
-  --text-md---bold-italic: 16px;
-  --text-md-----regular-underlined: 16px;
-  --text-sm---regular: 14px;
-  --text-sm---medium: 14px;
-  --text-sm---semibold: 14px;
-  --text-sm-----bold: 14px;
-  --text-xs---regular: 12px;
-  --text-xs---medium: 12px;
-  --text-xs---semibold: 12px;
-  --text-xs-----bold: 12px;
+
+  /* Font-weight styles */
+  --regular-font-weight: 400;
+  --medium-font-weight: 500;
+  --semibold-font-weight: 600;
+  --bold-font-weight: 700;
+
+  /* Display 2xl */
+  --display-2xl---font-size: 72px;
+  --display-2xl---line-height: 90px;
+  --display-2xl---letter-spacing: -0.02em;
+
+  /* Display xl */
+  --display-xl---font-size: 60px;
+  --display-xl---line-height: 72px;
+  --display-xl---letter-spacing: -0.02em;
+
+  /* Display lg */
+  --display-lg---font-size: 48px;
+  --display-lg---line-height: 60px;
+  --display-lg---letter-spacing: -0.02em;
+
+  /* Display md */
+  --display-md---font-size: 36px;
+  --display-md---line-height: 44px;
+  --display-md---letter-spacing: -0.02em;
+
+  /* Display sm */
+  --display-sm---font-size: 30px;
+  --display-sm---line-height: 38px;
+
+  /* Display xs */
+  --display-xs---font-size: 24px;
+  --display-xs---line-height: 32px;
+
+  /* Text xl */
+  --text-xl---font-size: 20px;
+  --text-xl---line-height: 30px;
+
+  /* Text lg */
+  --text-lg---font-size: 18px;
+  --text-lg---line-height: 28px;
+
+  /* Text md */
+  --text-md---font-size: 16px;
+  --text-md---line-height: 24px;
+
+  /* Text sm */
+  --text-sm---font-size: 14px;
+  --text-sm---line-height: 20px;
+
+  /* Text xs*/
+  --text-xs---font-size: 12px;
+  --text-xs---line-height: 18px;
 
   /* Effect styles */
   --focus-ring--4px-primary-100: 0px 0px 0px rgba(244, 235, 255, 1);
