@@ -1,0 +1,22 @@
+.search__bar__conatiner {
+  width: 231px;
+  height: 44px;
+
+  background-color: var(--white);
+  border: 1px solid var(--gray--300);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.search__bar__conatiner svg {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.search__bar__conatiner input {
+  border: none;
+  width: 100%;
+}
+.search__bar__conatiner input:focus {
+  outline: none;
+}

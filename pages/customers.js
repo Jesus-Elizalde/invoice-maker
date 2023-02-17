@@ -1,7 +1,13 @@
+import Table from "@/components/Table";
 import React from "react";
 
 const customers = () => {
-  return <div>Customers</div>;
+  return (
+    <div>
+      <h1>Customers</h1>
+      <Table />
+    </div>
+  );
 };
 
 export default customers;
