@@ -48,3 +48,34 @@
   font-weight: (--semibold-font-weight);
   line-height: (--text-md---line-height);
 }
+
+.profile__conatiner {
+  border-top: 1px solid var(--gray--200);
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile__picture {
+  width: 40px;
+  height: 40px;
+
+  background: var(--gray--300);
+  border-radius: 5px;
+}
+
+.username {
+  color: var(--gray--700);
+  font-size: var(--text-sm---font-size);
+  font-weight: var(--semibold-font-weight);
+  line-height: var(--text-sm---line-height);
+  margin: 0;
+}
+
+.email {
+  color: var(--gray--600);
+  font-size: var(--text-sm---font-size);
+  font-weight: var(--regular-font-weight);
+  margin: 0;
+}

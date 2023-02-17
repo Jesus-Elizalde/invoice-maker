@@ -5,6 +5,8 @@ import HomeIcon from "../../assets/svgs/HomeIcon.svg";
 import CustomersIcon from "../../assets/svgs/CustomersIcon.svg";
 import EstimatesIcon from "../../assets/svgs/EstimatesIcon.svg";
 import InvoicesIcon from "../../assets/svgs/InvoicesIcon.svg";
+import SettingsIcon from "../../assets/svgs/SettingsIcon.svg";
+import SignOutIcon from "../../assets/svgs/SignOutIcon.svg";
 
 const SideBar = () => {
   return (
@@ -29,6 +31,18 @@ const SideBar = () => {
       <div className={styles.tab__conatiners}>
         <InvoicesIcon />
         <h2>Invoices</h2>
+      </div>
+      <div className={styles.tab__conatiners}>
+        <SettingsIcon />
+        <h2>Settings</h2>
+      </div>
+      <div className={styles.profile__conatiner}>
+        <div className={styles.profile__picture}></div>
+        <div className="fc">
+          <p className={styles.username}>Test User</p>
+          <p className={styles.email}>demouser@test.com</p>
+        </div>
+        <SignOutIcon />
       </div>
     </nav>
   );
