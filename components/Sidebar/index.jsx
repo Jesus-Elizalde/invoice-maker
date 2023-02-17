@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/Sidebar.module.css";
 
+import LogoIcon from "../../assets/svgs/LogoIcon.svg";
 import HomeIcon from "../../assets/svgs/HomeIcon.svg";
 import CustomersIcon from "../../assets/svgs/CustomersIcon.svg";
 import EstimatesIcon from "../../assets/svgs/EstimatesIcon.svg";
@@ -15,119 +16,45 @@ const SideBar = () => {
   const { pathname } = router;
 
   return (
-    <nav className={styles.Sidebar__container}>
-      <div className={styles.top__container}>
-        <div className={styles.logo__conatiner}>
-          <div className={styles.company__logo}></div>
-          <h1 className={styles.logo__name}>Company Name</h1>
-        </div>
-        <div className={styles.search__bar}></div>
-        <Link
-          href="/"
-          className={
-            pathname === "/home"
-              ? styles.tab__conatiners__selected
-              : styles.tab__conatiners
-          }
-        >
-          <HomeIcon />
-          <p
-            className={
-              pathname === "/home"
-                ? styles.tab__title__selected
-                : styles.tab__title
-            }
-          >
-            Home
-          </p>
-        </Link>
-        <Link
-          href="/customers"
-          className={
-            pathname === "/customers"
-              ? styles.tab__conatiners__selected
-              : styles.tab__conatiners
-          }
-        >
-          <CustomersIcon />
-          <p
-            className={
-              pathname === "/customers"
-                ? styles.tab__title__selected
-                : styles.tab__title
-            }
-          >
-            Customers
-          </p>
-        </Link>
-        <Link
-          href="/estimates"
-          className={
-            pathname === "/estimates"
-              ? styles.tab__conatiners__selected
-              : styles.tab__conatiners
-          }
-        >
-          <EstimatesIcon />
-          <p
-            className={
-              pathname === "/estimates"
-                ? styles.tab__title__selected
-                : styles.tab__title
-            }
-          >
-            Estimates
-          </p>
-        </Link>
-        <Link
-          href="/invoices"
-          className={
-            pathname === "/invoices"
-              ? styles.tab__conatiners__selected
-              : styles.tab__conatiners
-          }
-        >
-          <InvoicesIcon />
-          <p
-            className={
-              pathname === "/invoices"
-                ? styles.tab__title__selected
-                : styles.tab__title
-            }
-          >
-            Invoices
-          </p>
-        </Link>
-      </div>
-      <div className={styles.top__container}>
-        <Link
-          href="/settings"
-          className={
-            pathname === "/settings"
-              ? styles.tab__conatiners__selected
-              : styles.tab__conatiners
-          }
-        >
-          <SettingsIcon />
-          <p
-            className={
-              pathname === "/invoices"
-                ? styles.tab__title__selected
-                : styles.tab__title
-            }
-          >
-            Settings
-          </p>
-        </Link>
-        <div className={styles.profile__conatiner}>
-          <div className={styles.profile__picture}></div>
-          <div className="fc">
-            <p className={styles.username}>Test User</p>
-            <p className={styles.email}>demouser@test.com</p>
-          </div>
-          <SignOutIcon />
-        </div>
-      </div>
+    <nav className={styles.navbar}>
+      <ul className={styles.navbar__nav}>
+        <li className={styles.logo}>
+          <Link href="/" className={styles.nav__link}>
+            <LogoIcon />
+            <span className={styles.link__text}>Company Name</span>
+          </Link>
+        </li>
+        <li className={styles.nav__item}>
+          <Link href="/home" className={styles.nav__link}>
+            <HomeIcon />
+            <span className={styles.link__text}>Home</span>
+          </Link>
+        </li>
+        <li className={styles.nav__item}>
+          <Link href="/customers" className={styles.nav__link}>
+            <CustomersIcon />
+            <span className={styles.link__text}>Customers</span>
+          </Link>
+        </li>
+        <li className={styles.nav__item}>
+          <Link href="/estimates" className={styles.nav__link}>
+            <EstimatesIcon />
+            <span className={styles.link__text}>Estimates</span>
+          </Link>
+        </li>
+        <li className={styles.nav__item}>
+          <Link href="/invoices" className={styles.nav__link}>
+            <InvoicesIcon />
+            <span className={styles.link__text}>Invoices</span>
+          </Link>
+        </li>
+        <li className={styles.nav__item}>
+          <Link href="/settings" className={styles.nav__link}>
+            <SettingsIcon />
+            <span className={styles.link__text}>Settings</span>
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };
