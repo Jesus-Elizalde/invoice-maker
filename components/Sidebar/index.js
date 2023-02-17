@@ -11,7 +11,7 @@ import SignOutIcon from "../../assets/svgs/SignOutIcon.svg";
 const SideBar = () => {
   return (
     <nav className={styles.Sidebar__container}>
-      <div>
+      <div className={styles.top__container}>
         <div className={styles.logo__conatiner}>
           <div className={styles.company__logo}></div>
           <h1 className={styles.logo__name}>Company Name</h1>
@@ -34,7 +34,7 @@ const SideBar = () => {
           <h2>Invoices</h2>
         </div>
       </div>
-      <div>
+      <div className={styles.top__container}>
         <div className={styles.tab__conatiners}>
           <SettingsIcon />
           <h2>Settings</h2>
