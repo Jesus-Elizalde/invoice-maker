@@ -9,7 +9,7 @@ export default function Home() {
   // temp auth true
   useEffect(() => {
     router.push("/home");
-  }, []);
+  });
   return (
     <>
       <Head>
