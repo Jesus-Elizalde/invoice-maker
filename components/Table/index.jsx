@@ -18,17 +18,17 @@ const Table = (data = []) => {
       <table className={styles.table__container}>
         <thead>
           <tr>
-            {dataTitles.map((title) => (
-              <th>{title.toUpperCase()}</th>
+            {dataTitles.map((title, idx) => (
+              <th key={idx}>{title.toUpperCase()}</th>
             ))}
             <th></th>
           </tr>
         </thead>
         <tbody>
-          {CUSTOMERS.map((customer) => (
-            <tr>
-              {dataTitles.map((title) => (
-                <td>{customer[title]}</td>
+          {CUSTOMERS.map((customer, idx) => (
+            <tr key={idx}>
+              {dataTitles.map((title, idx) => (
+                <td key={idx}>{customer[title]}</td>
               ))}
             </tr>
           ))}
