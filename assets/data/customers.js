@@ -1,3 +1,4 @@
+// FAKE DATA
 const CUSTOMERS = [
   {
     name: "Debra Reid",
