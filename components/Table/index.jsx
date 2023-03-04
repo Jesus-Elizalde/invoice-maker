@@ -6,7 +6,6 @@ import styles from "../../styles/Table.module.css";
 import CUSTOMERS from "@/assets/data/customers";
 
 const Table = (data = []) => {
-  console.log("🚀 ~ file: index.jsx:7 ~ CUSTOMERS", CUSTOMERS);
   const dataTitles = Object.keys(CUSTOMERS[0]);
 
   return (

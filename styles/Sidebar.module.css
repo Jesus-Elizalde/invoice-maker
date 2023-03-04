@@ -92,6 +92,11 @@
   background-color: var(--gray--50);
 }
 
+.main__no__nav {
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;
