@@ -1,11 +1,12 @@
 import React from "react";
 import SideBar from "./Sidebar";
 import styles from "../styles/Sidebar.module.css";
-import { useRouter } from "next/router";
+
 import Head from "next/head";
+import { useSession } from "next-auth/react";
 
 export default function Layout({ children }) {
-  const router = useRouter();
+  const { status } = useSession();
   return (
     <div>
       <Head>
@@ -14,7 +15,7 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {router.route !== "/" && <SideBar />}
+      {status === "authenticated" && <SideBar />}
       <main className={styles.main}>{children}</main>
     </div>
   );

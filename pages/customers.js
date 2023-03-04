@@ -1,6 +1,9 @@
 import Table from "@/components/Table";
 import React from "react";
 
+import { authOptions } from "./api/auth/[...nextauth]";
+import { requireAuthentication } from "@/utils/requireAuth";
+
 const customers = () => {
   return (
     <div>
@@ -11,3 +14,13 @@ const customers = () => {
 };
 
 export default customers;
+
+export async function getServerSideProps(context) {
+  return requireAuthentication(context, authOptions, (session) => {
+    return {
+      props: {
+        session,
+      },
+    };
+  });
+}

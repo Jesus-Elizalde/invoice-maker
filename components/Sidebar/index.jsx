@@ -14,6 +14,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Searchbar from "../Searchbar";
 
+import { signOut } from "next-auth/react";
+
 const SideBar = () => {
   const router = useRouter();
   const { pathname } = router;
@@ -108,7 +110,9 @@ const SideBar = () => {
               {/* <span>Test User</span>
               <span>demouser@test.com</span> */}
             </div>
-            {/* <SignOutIcon /> */}
+            <button className={styles.link__text} onClick={() => signOut()}>
+              <SignOutIcon />
+            </button>
           </div>
         </li>
       </ul>
